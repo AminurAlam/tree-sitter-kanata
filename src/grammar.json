@@ -59,21 +59,8 @@
         {
           "type": "REPEAT",
           "content": {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "PREC",
-                "value": 100,
-                "content": {
-                  "type": "SYMBOL",
-                  "name": "block_comment"
-                }
-              },
-              {
-                "type": "PATTERN",
-                "value": ".|[\\r\\n\\u{85}\\u{2028}\\u{2029}]"
-              }
-            ]
+            "type": "PATTERN",
+            "value": ".|[\\r\\n\\u{85}\\u{2028}\\u{2029}]"
           }
         },
         {

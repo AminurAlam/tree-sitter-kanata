@@ -2,17 +2,7 @@
   {
     "type": "block_comment",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "block_comment",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "list",

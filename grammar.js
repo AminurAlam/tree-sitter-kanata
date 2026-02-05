@@ -42,12 +42,7 @@ module.exports = grammar({
 
     comment: ($) => /;;.*/,
 
-    block_comment: ($) =>
-      seq(
-        "#|",
-        repeat(choice(PREC.first($.block_comment), common.any_char)),
-        PREC.first("|#"),
-      ),
+    block_comment: ($) => seq("#|", repeat(common.any_char), PREC.first("|#")),
 
     _datum: ($) => choice($.boolean, $.string, $.symbol, $.list),
 
